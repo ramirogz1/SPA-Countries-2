@@ -19,8 +19,7 @@ module.exports = (sequelize) => {
         [Op.between]: [1, 90],
       },
       season: {
-        type: DataTypes.ENUM,
-        values: ["summmer", "autumn", "winter", "spring"],
+        type: DataTypes.ENUM("summmer", "autumn", "winter", "spring")
       },
     },
 
